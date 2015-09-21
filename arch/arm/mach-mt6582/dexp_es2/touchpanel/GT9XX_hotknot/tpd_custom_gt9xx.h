@@ -39,14 +39,13 @@
 
 /* Pre-defined definition */
 
-#define TPD_KEY_COUNT   4
-#define key_1           60,850              //auto define  
-#define key_2           180,850
-#define key_3           300,850
-#define key_4           420,850
+#define TPD_KEY_COUNT   3
+#define key_1           128,1372              //ariafan  
+#define key_2           360,1372
+#define key_3           592,1372
 
-#define TPD_KEYS        {KEY_BACK, KEY_HOME, KEY_MENU, KEY_SEARCH}
-#define TPD_KEYS_DIM    {{key_1,50,30},{key_2,50,30},{key_3,50,30},{key_4,50,30}}
+#define TPD_KEYS        {KEY_MENU, KEY_HOMEPAGE,  KEY_BACK}
+#define TPD_KEYS_DIM    {{key_1,100,100},{key_2,100,100},{key_3,100,100}}
 
 struct goodix_ts_data
 {
@@ -96,13 +95,13 @@ extern s32 gup_load_hotknot_system(void);
 extern unsigned char gtp_default_FW_fl[];
 //***************************PART1:ON/OFF define*******************************
 #define GTP_CUSTOM_CFG        0
-#define GTP_DRIVER_SEND_CFG   1       //driver send config to TP on intilization (for no config built in TP flash)
+#define GTP_DRIVER_SEND_CFG   0       //driver send config to TP on intilization (for no config built in TP flash)
 #define GTP_HAVE_TOUCH_KEY    0
 #define GTP_POWER_CTRL_SLEEP  1       //turn off power on suspend
-#define GTP_AUTO_UPDATE       1      //update FW to TP FLASH
+#define GTP_AUTO_UPDATE       0      //update FW to TP FLASH
 #define GTP_CHANGE_X2Y        0				//set for se1
-#define GTP_HEADER_FW_UPDATE  1       // auto updated fw by gtp_default_FW in gt9xx_firmware.h, function together with GTP_AUTO_UDPATE
-#define GTP_AUTO_UPDATE_CFG   1       // auto update config by .cfg file, function together with GTP_AUTO_UPDATE
+#define GTP_HEADER_FW_UPDATE  0       // auto updated fw by gtp_default_FW in gt9xx_firmware.h, function together with GTP_AUTO_UDPATE
+#define GTP_AUTO_UPDATE_CFG   0       // auto update config by .cfg file, function together with GTP_AUTO_UPDATE
 
 #define GTP_SUPPORT_I2C_DMA   1       // if gt9xxf, better enable it if hardware platform supported
 #define GTP_COMPATIBLE_MODE   1       // compatible with GT9XXF
@@ -240,8 +239,8 @@ a sample config, send this config should cause the chip cannot work normally*/
 #define GTP_MAX_WIDTH    480
 #define GTP_INT_TRIGGER  0    //0:Rising 1:Falling
 #else
-#define GTP_MAX_HEIGHT   1280
-#define GTP_MAX_WIDTH    720
+#define GTP_MAX_HEIGHT   854
+#define GTP_MAX_WIDTH    480
 #define GTP_INT_TRIGGER  1
 #endif
 #define GTP_MAX_TOUCH      5
@@ -253,7 +252,7 @@ a sample config, send this config should cause the chip cannot work normally*/
 
 //STEP_4(optional):If this project have touch key,Set touch key config.
 #if GTP_HAVE_TOUCH_KEY
-#define GTP_KEY_TAB	 {KEY_MENU, KEY_HOME, KEY_BACK, KEY_SEND}
+#define GTP_KEY_MAP_ARRAY		{{128,1372},{360,1372},{592,1372},}
 #endif
 
 //***************************PART3:OTHER define*********************************
