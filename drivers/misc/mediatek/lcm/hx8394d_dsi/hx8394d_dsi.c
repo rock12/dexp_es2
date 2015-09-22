@@ -416,9 +416,9 @@ static unsigned int lcm_esd_recover(void)
 // ---------------------------------------------------------------------------
 //  Get LCM Driver Hooks
 // ---------------------------------------------------------------------------
-LCM_DRIVER hx8394d_hd_cmi5p0_blj_s800_lcm_drv =
+LCM_DRIVER hx8394d_dsi_lcm_drv =
 {
-	.name           = "hx8394d_hd_cmi5p0_blj_s800",
+	.name           = "hx8394d_dsi",
 	.set_util_funcs = lcm_set_util_funcs,
 	.get_params     = lcm_get_params,
 	.init           = lcm_init,
