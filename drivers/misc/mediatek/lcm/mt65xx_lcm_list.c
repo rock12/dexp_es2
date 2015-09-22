@@ -18,6 +18,7 @@
 #define LCD_DEBUG(fmt)  printk(fmt)
 #endif
 extern LCM_DRIVER hx8379c_dsi_vdo_dexp_lcm_drv;
+extern LCM_DRIVER hx8394d_dsi_lcm_drv;
 extern LCM_DRIVER otm1282a_hd720_dsi_vdo_60hz_lcm_drv;
 extern LCM_DRIVER otm1282a_hd720_dsi_vdo_lcm_drv;
 extern LCM_DRIVER vvx10f008b00_wuxga_dsi_vdo_lcm_drv;
@@ -221,6 +222,9 @@ LCM_DRIVER* lcm_driver_list[] =
 
 #if defined(HX8394A_HD720_DSI_VDO_TIANMA_V2)
     &hx8394a_hd720_dsi_vdo_tianma_v2_lcm_drv,
+#endif
+#if defined(HX8394D_DSI)
+    &hx8394d_dsi_lcm_drv,
 #endif
 #if defined(OTM1283A)
 	 &otm1283a_6589_hd_dsi,
