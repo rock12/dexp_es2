@@ -459,6 +459,10 @@ config MTK_GT9XX
         bool "GT9XX for Mediatek package"
         default n
         
+config MTK_FT_ALLINONE_GESTURE
+        bool "FT_ALLINONE_GESTURE for Mediatek package"
+        default n        
+        
 config MTK_MMS244
         bool "MMS244 for Mediatek package"
         default n 
