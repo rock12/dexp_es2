@@ -66,8 +66,8 @@ struct Upgrade_Info {
 #define IIC_PORT                        0
 #define TPD_HAVE_BUTTON									// if have virtual key,need define the MACRO
 #define TPD_BUTTON_HEIGH        				(40)  			//100
-#define TPD_KEY_COUNT           4    //  4
-#define TPD_KEYS                { KEY_MENU, KEY_BACK, KEY_SEARCH,KEY_HOMEPAGE}
+#define TPD_KEY_COUNT           3    //  3
+#define TPD_KEYS                { KEY_MENU, KEY_HOMEPAGE, KEY_BACK}
 
 #if defined(CONFIG_TPD_PROXIMITY)
 	#define TPD_PROXIMITY					// if need the PS funtion,enable this MACRO
@@ -76,12 +76,12 @@ struct Upgrade_Info {
 
 //QHD
 
-#define TPD_KEYS_DIM_QHD               {{160,2000,60,TPD_BUTTON_HEIGH}, {950,2000,60,TPD_BUTTON_HEIGH}, {200,2000,60,TPD_BUTTON_HEIGH}, {540,2000,60,TPD_BUTTON_HEIGH}}
-#define TPD_KEYS_DIM_FWVGA             {{66,880,60,TPD_BUTTON_HEIGH},  {418,880,60,TPD_BUTTON_HEIGH},  {200,880,60,TPD_BUTTON_HEIGH},  {300,880,60,TPD_BUTTON_HEIGH}}
+#define TPD_KEYS_DIM_QHD               {{160,2000,60,TPD_BUTTON_HEIGH},  {950,2000,60,TPD_BUTTON_HEIGH},  {540,2000,60,TPD_BUTTON_HEIGH}}
+#define TPD_KEYS_DIM_FWVGA             {{66,880,60,TPD_BUTTON_HEIGH},  {418,880,60,TPD_BUTTON_HEIGH},  {300,880,60,TPD_BUTTON_HEIGH}}
 
 
-//#define TPD_RES_X                					540 //480
-//#define TPD_RES_Y                					960 //800
+#define TPD_RES_X                					480 //480
+#define TPD_RES_Y                					854 //854
 /*********************Custom Define end*************************************************/
 
 #define TPD_NAME    "FT"
@@ -101,9 +101,9 @@ struct Upgrade_Info {
 
 
 #define TPD_DELAY                		(2*HZ/100)
-//#define TPD_RES_X                		480
-//#define TPD_RES_Y                		800
-#define TPD_CALIBRATION_MATRIX  		{962,0,0,0,1600,0,0,0};
+#define TPD_RES_X                		480
+#define TPD_RES_Y                		854
+//#define TPD_CALIBRATION_MATRIX  		{962,0,0,0,1600,0,0,0};
 
 //#define TPD_HAVE_CALIBRATION
 //#define TPD_HAVE_TREMBLE_ELIMINATION
