@@ -65,7 +65,7 @@ struct Upgrade_Info {
 #define TPD_POWER_SOURCE_CUSTOM         MT6323_POWER_LDO_VGP1
 #define IIC_PORT                        0
 #define TPD_HAVE_BUTTON									// if have virtual key,need define the MACRO
-#define TPD_BUTTON_HEIGH        				(40)  			//100
+#define TPD_BUTTON_HEIGH        				(100)  			//100
 #define TPD_KEY_COUNT           3    //  3
 #define TPD_KEYS                { KEY_MENU, KEY_HOMEPAGE, KEY_BACK}
 
@@ -77,7 +77,7 @@ struct Upgrade_Info {
 //QHD
 
 #define TPD_KEYS_DIM_QHD               {{160,2000,60,TPD_BUTTON_HEIGH},  {950,2000,60,TPD_BUTTON_HEIGH},  {540,2000,60,TPD_BUTTON_HEIGH}}
-#define TPD_KEYS_DIM_FWVGA             {{66,880,60,TPD_BUTTON_HEIGH},  {418,880,60,TPD_BUTTON_HEIGH},  {300,880,60,TPD_BUTTON_HEIGH}}
+#define TPD_KEYS_DIM_FWVGA             {{80,900,160,TPD_BUTTON_HEIGH},  {240,900,160,TPD_BUTTON_HEIGH},  {400,900,160,TPD_BUTTON_HEIGH}}
 
 
 #define TPD_RES_X                					480 //480
