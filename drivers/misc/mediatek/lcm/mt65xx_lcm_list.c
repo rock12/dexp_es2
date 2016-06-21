@@ -17,6 +17,7 @@
 #else
 #define LCD_DEBUG(fmt)  printk(fmt)
 #endif
+extern LCM_DRIVER sh1282_fwvga_boe5p0_xld_a26_lcm_drv;
 extern LCM_DRIVER nt35512_fwvga_boe5p0_xingld_dg_a26_lcm_drv;
 extern LCM_DRIVER hx8379c_dsi_vdo_dexp_lcm_drv;
 extern LCM_DRIVER otm1282a_hd720_dsi_vdo_60hz_lcm_drv;
@@ -202,6 +203,9 @@ extern LCM_DRIVER ili9806e_dsi_vdo_fwvga_drv;
 
 LCM_DRIVER* lcm_driver_list[] = 
 {
+#if defined(SH1282_FWVGA_BOE5P0_XLD_A26)
+        &sh1282_fwvga_boe5p0_xld_a26_lcm_drv,
+#endif	
 #if defined(NT35512_FWVGA_BOE5P0_XINGLD_DG_A26)
         &nt35512_fwvga_boe5p0_xingld_dg_a26_lcm_drv,
 #endif	
